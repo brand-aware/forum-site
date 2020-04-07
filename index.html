@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>forum_site</title>
+
+	<link href="css/index.css" rel="stylesheet" />
+	<script src="js/index.js"></script>
+	<meta charset="UTF-8">
+	<link rel="icon" href="img/company.png">
+</head>
+
+<body>
+<div id="header">
+    <table id="title_table">
+        <tr>
+            <td id="title_logo">
+                <img src="img/index.png" />
+            </td>
+            <td id="title_button1">
+                <a href="blog">
+                    <img src="img/blog.png">
+                </a>
+            </td>
+            <td id="title_button2">
+                <a href="mywiki">
+                    <img src="img/wiki.png">
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="index_body">
+    <div id="search">
+        <button id="submit_search" onclick="searchButtonClick()">Search</button>
+        <input id="search_text" type="text" />
+    </div>
+
+	<table id="body_table">
+            <tr>
+                <td>
+                    <a href="science.php">Science</a>
+                </td>
+                <td>
+                    <a href="politics.php">Politics</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="entertainment.php">Entertainment</a>
+                </td>
+                <td>
+                    <a href="technology.php">Technology</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="popular_events.php">Popular Events</a>
+                </td>
+                <td>
+                    <a href="unexpected_things.php">Unexpected Things</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+<script>
+	var input = document.getElementById("search_text");
+	input.addEventListener("keyup", function(event) {
+		// Number 13 is the "Enter" key on the keyboard
+		if(event.keyCode === 13) {
+			event.preventDefault();
+			document.getElementById("submit_search").click();
+		}
+	});
+</script>
+</body>
+</html>

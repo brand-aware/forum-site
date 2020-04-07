@@ -1,0 +1,89 @@
+/* 
+    Created on : Dec 7, 2019, 10:12:53 AM
+    Author     : mike802
+*/
+#dis_table{
+    width: 100%;
+}
+#header_title{
+    position:absolute;
+    left: 65px;
+    top: 30px;
+}
+#header_link{
+    position: absolute;
+    right: 15%;
+    top: 30px;
+}
+
+#topic_title{
+    width:80%;
+    border-style: solid;
+    border-width: 2px;
+    position: relative;
+    left: 0px;
+    padding: 70px;
+    margin: 25px;
+    top: 125px;
+}
+#topic_username{
+    width: 10%;
+    border-style: solid;
+    border-width: 2px;
+    position: absolute;
+    left: 85px;
+    top: 375px;
+}
+#topic_timestamp{
+    width: 30%;
+    border-style: solid;
+    border-width: 2px;
+    position: absolute;
+    left: 265px;
+    top: 375px;
+}
+.display_comment{
+    width: 80%;
+    border-style: solid;
+    border-width: 1px;
+    position: relative;
+    left: 0px;
+    top: 175px;
+    padding: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+}
+.display_username{
+    width: 10%;
+    border-style: solid;
+    border-width: 1px;
+    position: absolute;
+    left: 45px;
+    margin-top: 200px;
+}
+.display_timestamp{
+    width: 30%;
+    border-style: solid;
+    border-width: 1px;
+    position: absolute;
+    left: 225px;
+    margin-top: 200px;
+}
+.display_body{
+    position: relative;
+}
+#footer{
+    top: 350px;
+    position: relative;
+}
+#comment_link{
+    margin-bottom: 25px;
+}
+#footer_logo{
+    position: absolute;
+    width: 55%;
+    right: 100px;
+}
+
