@@ -30,24 +30,12 @@ function submitComment(){
 	comment_theme.setAttribute("name", "theme_get");
 	comment_theme.setAttribute("value", theme);
 	form.appendChild(comment_theme);
-	
-	//use GET var from url for topic
-	var full_url = window.location.href;
-	var split_url = full_url.split("?");
-	var split_params = split_url[1].split("&");
-	var split_var = split_params[1].split("=");
-	var topic = split_var[1];
-	var comment_topic = document.createElement("input");
-	comment_topic.setAttribute("type", "hidden");
-	comment_topic.setAttribute("name", "topic_get");
-	comment_topic.setAttribute("value", topic);
-	form.appendChild(comment_topic);
 
 	//use GET var from url for orig_id
 	var full_url = window.location.href;
 	var split_url = full_url.split("?");
 	var split_params = split_url[1].split("&");
-	var split_var = split_params[2].split("=");
+	var split_var = split_params[1].split("=");
 	var orig_id = split_var[1];
 	var comment_orig_id = document.createElement("input");
 	comment_orig_id.setAttribute("type", "hidden");

@@ -22,24 +22,12 @@
             $database = "forum_site";
             
             //html display for user
-            //topic of page (topic -> comments........)
-            $topic=$_POST['topic_get'];
-            echo("posted to topic: $topic</br>");
+            echo("<b>COMMENT POSTED</b>");
             $username_text = $_POST['comment_username_post'];
             echo("posted by: $username_text</br>");
             //comment on topic, posted by user
             $comment_text = $_POST['comment_post'];
             echo("new comment: $comment_text</br>");
-            
-            //remove special chars from topic
-            $newtopic1=str_replace(" ", "%20", $topic);
-            $newtopic2=str_replace("?", "%21", $newtopic1);
-            $newtopic3=str_replace("'", "%22", $newtopic2);
-            ## str_replace("/"", "%23", $topic); ----- not supported
-            $newtopic4=str_replace("=", "%24", $newtopic3);
-            $newtopic5=str_replace("<", "%25", $newtopic4);
-            $newtopic6=str_replace(">", "%26", $newtopic5);
-            $newtopic7=str_replace("$", "%27", $newtopic6);
             
             //remove special chars from comment
             $newcomment1=str_replace(" ", "%20", $comment_text);

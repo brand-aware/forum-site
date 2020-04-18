@@ -124,7 +124,7 @@
     </div>
     <div id='footer'>
         <div id='comment_link'>
-            <a id='new_comment_link' href='<?php echo("new_comment.html?theme=$theme&topic=$newtopic7&orig_id=$orig_id"); ?>'>
+            <a id='new_comment_link' href='<?php echo("new_comment.html?theme=$theme&orig_id=$orig_id"); ?>'>
                 comment
             </a>
         </div>
