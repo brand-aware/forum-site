@@ -1,4 +1,5 @@
 function submitComment(){
+    //new comment111
 	var form = document.createElement("form");
 	form.setAttribute("method", "post");
 	form.setAttribute("action", "create_comment.php");
